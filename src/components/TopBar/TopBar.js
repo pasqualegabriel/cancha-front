@@ -16,7 +16,7 @@ export default function TopBar(props) {
           <Image src={UserImage} />
           user
         </Link>
-        <Icon name="bars" onClick={() => {}} />
+        <Icon name="log out" onClick={() => {}} />
       </div>
     </div>
   );

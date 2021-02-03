@@ -1,62 +1,59 @@
 @import "../../scss/index.scss";
 
-.wrapper {
-   height: 100%;
+.body2 {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  margin-top: 50px;
 }
 
-.one {
-  background-color: yellow;
-  float: left; 
-  width: 20%;
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
   height: 100%;
+  overflow: auto;
 }
 
-.two { 
-  background-color: green;
-  float: left; 
-  width: 80%;
-  // overflow:hidden;
-  // margin:10px;
-  // border:2px dashed #ccc;
-  // min-height:170px;
-  // margin-top: 10px;
-  // overflow-x: scroll;
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
-.my-home {
-  // background-color: #808080;
-  margin-top: 10px;
-  overflow-x: scroll;
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
 
-.my-grid-row {
-  display: flex;
-  justify-content: space-around;
-  margin: 3px;
+.middlet {
+  margin-left: 200px;
+  padding: 10px 16px;
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
 }
 
-.my-col {
-  background-color: #eee;
-  height: 100px;
-  width: 70%;
-  max-width: 100vh;
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  .middlet {margin-left: 0;}
 }
 
-// @media screen and (max-width: 720px) {
-//   .my-home {
-//     // margin-top: auto;
-//   }
-
-//   .my-grid-row {
-//       display: initial;
-//       margin: 1px;
-//       justify-content: space-around;
-//   }
-
-//   .my-col {
-//       width: initial;
-//       margin: 1px;
-//       justify-content: space-around;
-//       width: 90%;
+// @media screen and (max-width: 500px) {
+//   .sidebar a {
+//     text-align: center;
+//     float: none;
 //   }
 // }

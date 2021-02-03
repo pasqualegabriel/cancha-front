@@ -1,0 +1,28 @@
+@import "../../scss/index.scss";
+
+.middlet {
+  margin-left: 200px;
+  // padding: 10px 16px;
+  height: 100%;
+  background-color: yellow;
+  position: center;
+  justify-content: space-around;
+}
+
+.my-col2 {
+  background-color: #eee;
+  height: 100px;
+  margin-top: 9px;
+  margin-right: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  .middlet {
+    margin-left: 0;
+    width: 100%;
+  }
+  .my-col2 {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
