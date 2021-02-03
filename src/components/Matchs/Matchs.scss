@@ -2,18 +2,20 @@
 
 .middlet {
   margin-left: 200px;
-  // padding: 10px 16px;
+  padding: 10px 16px;
   height: 100%;
-  background-color: yellow;
+  width: 100%;
+  // background-color: lightgoldenrodyellow;
   position: center;
   justify-content: space-around;
 }
 
-.my-col2 {
+.my-col {
   background-color: #eee;
   height: 100px;
   margin-top: 9px;
   margin-right: 200px;
+  border: 1px solid lightgray;
 }
 
 @media screen and (max-width: 800px) {
@@ -21,7 +23,7 @@
     margin-left: 0;
     width: 100%;
   }
-  .my-col2 {
+  .my-col {
     width: 100%;
     margin-right: 0px;
   }

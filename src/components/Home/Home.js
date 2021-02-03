@@ -6,29 +6,19 @@ import "./Home.scss";
 export default function Home(props) {
 
   return (
-    // <div className="wrapper">
-    //   <div className="one">one</div>
-    //   <div className="two">
-    //     {Array.from({length: 25}, (_, i) => 
-    //       <div className="my-grid-row" key={i+1}>
-    //         <div className="my-col"></div>
-    //       </div>
-    //     )}
-    //   </div>
-    // </div>
-
     <div className="body2">
 
       <div className="sidebar">
-        <a className="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a className="active" href="#home">Partidos</a>
+        {/* <a href="#home">Home</a> */}
+        <a href="#news">Equipos</a>
+        <a href="#contact">Jugadores</a>
+        <a href="#about">Nuevo Partido</a>
+        <a href="#about">Nuevo Equipo</a>
+        <a href="#about">Nuevo Jugador</a>
       </div>
 
-      {/* <div className="middlet"> */}
-        <Matchs />
-      {/* </div> */}
+      <Matchs />
 
     </div>
     
