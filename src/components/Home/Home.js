@@ -13,9 +13,9 @@ export default function Home(props) {
         {/* <a href="#home">Home</a> */}
         <a href="#news">Equipos</a>
         <a href="#contact">Jugadores</a>
-        <a href="#about">Nuevo Partido</a>
-        <a href="#about">Nuevo Equipo</a>
-        <a href="#about">Nuevo Jugador</a>
+        <a className="abajo1" href="#about">Nuevo Partido</a>
+        <a className="abajo2" href="#about">Nuevo Equipo</a>
+        <a className="abajo3" href="#about">Nuevo Jugador</a>
       </div>
 
       <Matchs />
